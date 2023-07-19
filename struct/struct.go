@@ -53,6 +53,8 @@ func main() {
 	pp = &p
 	fmt.Println(pp.Name)
 
+	// =============================================================================
+
 	// Struct Literal
 	// var (
 	// 	p = Person{"Alps", 23}
@@ -65,15 +67,21 @@ func main() {
 	f := MyFloat(-math.Sqrt2)
 	fmt.Println(f.Abs())
 
+	// =============================================================================
+
 	// Pointer Receiver
 	p.GrowUp()
 	fmt.Println(p)
+
+	// =============================================================================
 
 	// Methods and pointer indirection
 	fmt.Println(String(&p))  // OK
 	fmt.Println(p.String())  // OK
 	fmt.Println(pp.String()) // OK
 	// fmt.Println(String(p))   // Compile error!
+
+	// =============================================================================
 
 	// Map and Struct
 	var m = map[int]Person{

@@ -23,6 +23,8 @@ func main() {
 	*p = 21 // Set i through the pointer p
 	fmt.Println(i)
 
+	// =============================================================================
+
 	// Array
 	var names [6]string
 	names[0] = "Alps"
@@ -38,6 +40,8 @@ func main() {
 
 	// Another way to declare array
 	// names := [6]string{"Alps", "Gan", "Pang", "Bum", "Joe", "Tiger"}
+
+	// =============================================================================
 
 	// Slice
 	// Slice Default -> [0:len(array)]
@@ -60,12 +64,16 @@ func main() {
 		fmt.Println("nil!")
 	}
 
+	// =============================================================================
+
 	// Make function
 	a := make([]int, 0, 5)
 	if a == nil {
 		fmt.Println("nil!")
 	}
 	fmt.Println("a", a)
+
+	// =============================================================================
 
 	// Append function
 	a = append(a, 1)
@@ -75,6 +83,8 @@ func main() {
 	a = append(a, b...)
 
 	fmt.Println("a", a, cap(a))
+
+	// =============================================================================
 
 	// Slice of slices
 	board := [][]string{
@@ -104,10 +114,14 @@ func main() {
 		}
 	}
 
+	// =============================================================================
+
 	fmt.Println(slice2d)
 
 	// Array 2D
 	// var array2d [3][3]int
+
+	// =============================================================================
 
 	// Range
 	member := []string{"Alps", "Gan", "Pang", "Bum", "Joe", "Tiger"}
@@ -123,6 +137,8 @@ func main() {
 	// for i := range member {
 	// 	fmt.Printf("%d\n", i)
 	// }
+
+	// =============================================================================
 
 	// Map
 	// Zero value of map is nil, so we need to use make function

@@ -35,6 +35,9 @@ func (p Person) String() string {
 }
 
 func main() {
+
+	// Interface
+
 	var l ILiving
 	if l == nil {
 		fmt.Println("l is nil, cannot call method")
@@ -51,6 +54,8 @@ func main() {
 	l = p
 	l.Scream()
 
+	// =============================================================================
+
 	// Empty Interface
 
 	var i interface{}
@@ -58,6 +63,8 @@ func main() {
 	fmt.Printf("%T %v\n", i, i)
 	i = "Alps"
 	fmt.Printf("%T %v\n", i, i)
+
+	// =============================================================================
 
 	// Type Assertion
 
@@ -73,8 +80,12 @@ func main() {
 
 	// f = i.(float64) // panic
 
+	// =============================================================================
+
 	// Type Switch
 	do(i)
+
+	// =============================================================================
 
 	// Stringer
 	// type Stringer interface {
@@ -82,6 +93,8 @@ func main() {
 	// }
 	p = &Person{"Alps", 23}
 	fmt.Println(p)
+
+	// =============================================================================
 
 	// Error
 	// type error interface {
@@ -100,6 +113,8 @@ func main() {
 	if err := run(); err != nil {
 		fmt.Println(err)
 	}
+
+	// =============================================================================
 
 	// Reader
 	r := strings.NewReader("Hello, Reader!")

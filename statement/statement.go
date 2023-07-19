@@ -32,6 +32,8 @@ func main() {
 	}
 	fmt.Println(sum)
 
+	// =============================================================================
+
 	// For For is Go's "while"
 	sum = 1
 	for sum < 1000 {
@@ -41,6 +43,8 @@ func main() {
 
 	fmt.Println(sqrt(2), sqrt(-4))
 	fmt.Println(pow(3, 2, 10), pow(3, 3, 20))
+
+	// =============================================================================
 
 	// Switch statement
 	fmt.Println("When's Saturday?")
@@ -54,6 +58,8 @@ func main() {
 		fmt.Println("Too far away.")
 	}
 
+	// =============================================================================
+
 	// Switch with no condition
 	switch {
 	case today == "Saturday":
@@ -63,4 +69,18 @@ func main() {
 	default:
 		fmt.Println("Too far away.")
 	}
+
+	// =============================================================================
+
+	// Defer
+	defer fmt.Println("Defer")
+	fmt.Println("This is ")
+
+	fmt.Println("counting")
+
+	for i := 0; i < 10; i++ {
+		defer fmt.Println(i)
+	}
+
+	fmt.Println("done")
 }
