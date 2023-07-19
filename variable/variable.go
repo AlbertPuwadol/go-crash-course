@@ -30,8 +30,8 @@ package variable
 // Variable declaration
 
 // These variables are public, they can be used across packages
-var R rune = 'ข'
-var S string = "กขคง"
+var R rune = 'a'
+var S string = "abcd"
 var B bool = true
 var I int = 100
 var Byte byte = byte('a')
