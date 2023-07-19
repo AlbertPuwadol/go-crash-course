@@ -58,3 +58,22 @@ var g complex128 = 0.867 + 0.5i
 // a, b := 1, "b"
 
 // =============================================================================
+
+// Type conversions
+
+// Example:
+// var i int = 65
+// var f float64 = float64(i)
+// var u uint = uint(f)
+// var s string = string(i)
+
+// =============================================================================
+
+// Constants
+
+// Constants are declared like variables, but with the const keyword.
+// Constants can be character, string, boolean, or numeric values.
+// Constants cannot be declared using the := syntax.
+
+// Example:
+// const Pi = 3.14
